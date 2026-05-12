@@ -5,6 +5,7 @@ ha_release: 2026.6
 ha_category:
   - Alarm
   - Hub
+  - Light
 ha_iot_class: Local Push
 ha_domain: elke27
 ha_config_flow: true
@@ -12,6 +13,7 @@ ha_codeowners:
   - '@mitchmitchell'
 ha_platforms:
   - alarm_control_panel
+  - light
 ha_integration_type: hub
 ---
 
@@ -32,6 +34,8 @@ Alarm control panel entities support:
 - Arm night
 - Arm custom bypass
 - Disarm
+
+Light entities represent Elk E27 lighting devices that can be controlled from Home Assistant.
 
 ## Prerequisites
 
