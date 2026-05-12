@@ -4,6 +4,7 @@ description: Instructions to set up the Elk E27 Alarm Engine integration.
 ha_release: 2026.6
 ha_category:
   - Alarm
+  - Binary sensor
   - Hub
 ha_iot_class: Local Push
 ha_domain: elke27
@@ -12,6 +13,7 @@ ha_codeowners:
   - '@mitchmitchell'
 ha_platforms:
   - alarm_control_panel
+  - binary_sensor
 ha_integration_type: hub
 ---
 
@@ -32,6 +34,8 @@ Alarm control panel entities support:
 - Arm night
 - Arm custom bypass
 - Disarm
+
+Binary sensor entities represent Elk E27 zones. A zone is `off` when it is normal and `on` when it is faulted or in another active state.
 
 ## Prerequisites
 
