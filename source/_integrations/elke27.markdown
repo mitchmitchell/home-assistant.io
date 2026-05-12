@@ -5,6 +5,7 @@ ha_release: 2026.6
 ha_category:
   - Alarm
   - Hub
+  - Lock
 ha_iot_class: Local Push
 ha_domain: elke27
 ha_config_flow: true
@@ -12,6 +13,7 @@ ha_codeowners:
   - '@mitchmitchell'
 ha_platforms:
   - alarm_control_panel
+  - lock
 ha_integration_type: hub
 ---
 
@@ -32,6 +34,8 @@ Alarm control panel entities support:
 - Arm night
 - Arm custom bypass
 - Disarm
+
+Lock entities represent Elk E27 locks that can be locked or unlocked from Home Assistant.
 
 ## Prerequisites
 
