@@ -5,6 +5,7 @@ ha_release: 2026.6
 ha_category:
   - Alarm
   - Hub
+  - Sensor
 ha_iot_class: Local Push
 ha_domain: elke27
 ha_config_flow: true
@@ -12,6 +13,7 @@ ha_codeowners:
   - '@mitchmitchell'
 ha_platforms:
   - alarm_control_panel
+  - sensor
 ha_integration_type: hub
 ---
 
@@ -32,6 +34,8 @@ Alarm control panel entities support:
 - Arm night
 - Arm custom bypass
 - Disarm
+
+Sensor entities expose Elk E27 diagnostic and status information, such as panel status, settings, counters, keypads, and analog zone values.
 
 ## Prerequisites
 
