@@ -4,6 +4,7 @@ description: Instructions to set up the Elk E27 Alarm Engine integration.
 ha_release: 2026.6
 ha_category:
   - Alarm
+  - Climate
   - Hub
 ha_iot_class: Local Push
 ha_domain: elke27
@@ -12,6 +13,7 @@ ha_codeowners:
   - '@mitchmitchell'
 ha_platforms:
   - alarm_control_panel
+  - climate
 ha_integration_type: hub
 ---
 
@@ -32,6 +34,8 @@ Alarm control panel entities support:
 - Arm night
 - Arm custom bypass
 - Disarm
+
+Climate entities represent Elk E27 thermostats that can be monitored and controlled from Home Assistant.
 
 ## Prerequisites
 
